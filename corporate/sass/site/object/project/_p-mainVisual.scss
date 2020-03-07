@@ -3,32 +3,66 @@ $class : '.p-mainVisual' ;
 
 #{$class} {
   padding: 50px 0 ;
+  @include mq-md {
+    padding: 50px 0 160px;
+  }
   &__mainText {
     text-align: center;
     font-family: 'Anton';
     font-size: 3rem;
     margin-bottom: 0;
     line-height: 1.5;
+    @include mq-md {
+      font-size: 6.4rem;
+      letter-spacing: 6px;
+      text-indent: 6px;
+    }
   }
   &__subText {
     text-align: center;
     line-height: 1.8;
+    @include mq-md {
+      margin-top: 0;
+    }
     span {
       background-color: #fcff00;
       padding: 1px 6px;
       margin-bottom: 6px;
       display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      @include mq-md {
+        padding: 1px 0;
+        letter-spacing: 1px;
+        text-indent: 1px;
+        font-size: 1.5rem;
+        &:nth-of-type(1) {
+          padding-left: 10px;
+        }
+        &:nth-of-type(2) {
+          padding-right: 10px;
+        }
+      }
     }
   }
 
   &__logo {
     text-align: center;
     font-size: 0.9rem;
+    @include mq-md {
+      letter-spacing: 4px;
+      text-indent: 4px;
+    }
     span {
       font-size: 1.6rem;
       font-family: 'Anton';
       letter-spacing: 8px;
       text-indent: 8px;
+      @include mq-md {
+        font-size: 2.2rem;
+        letter-spacing: 12px;
+        text-indent: 12px;
+      }
     }
   }
 }

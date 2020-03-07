@@ -1,11 +1,19 @@
-.p-blogList {
+
+$class : '.p-blogList' ;
+
+#{$class} {
   &__title {
     h2 {
       margin: 0;
+      @include mq-md {
+        font-size: 2rem;
+        font-weight: bold;
+      }
     }
   }
 
   &__wrap {
+    overflow: hidden;
     .c-blogThumbnailMenu {
       margin-bottom: 10px;
     }

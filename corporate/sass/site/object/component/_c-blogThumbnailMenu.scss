@@ -21,6 +21,11 @@ $class:'.c-blogThumbnailMenu';
       bottom:-100%;
       left:-100%;
       margin: auto;
+      @include mq-md {
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        border: 2px solid #fff;
+      }
     }
 
     #{$class}__cate {
@@ -39,6 +44,11 @@ $class:'.c-blogThumbnailMenu';
       -ms-writing-mode: tb-rl;
       -webkit-writing-mode:vertical-rl;
       z-index: 100;
+      @include mq-md {
+        font-size: 1rem;
+        height: 100px;
+        margin-top: -50px;
+      }
     }
   }
 
@@ -46,5 +56,9 @@ $class:'.c-blogThumbnailMenu';
     font-size: 0.8rem;
     font-weight: bold;
     margin-top: 8px;
+    @include mq-md {
+      font-size: 1rem;
+      font-weight: bold;
+    }
   }
 }

@@ -6,4 +6,8 @@ $class:'.c-bgText';
   font-weight: bold;
   color: #f6f6f6;
   line-height: 1;
+  @include mq-md {
+    font-size: 13rem;
+    letter-spacing: 30px;
+  }
 }

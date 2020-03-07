@@ -1,4 +1,7 @@
-.p-drawerMenu {
+
+$class : '.p-drawerMenu ';
+
+#{$class} {
   position: fixed;
   top:0;
   right:-70%;
@@ -6,23 +9,58 @@
   height: 100%;
   color: #fff;
   background-color: $color__site-main;
-  transition: 0.3s;
+  transition: 0.5s;
+  padding: 0 20px;
+  @include mq-md {
+    right:-30%;
+    width: 30%;
+  }
   &.open {
     right:0%;
   }
 
+  &__logo {
+    h2 {
+      padding: 0;
+      font-size: 2rem;
+    }
+  }
+
+  a,
+  a:visited,
+	a:hover,
+	a:focus,
+	a:active {
+		color: #fff;
+	}
+
   ul {
     padding: 0;
-    margin: 0 20px;
+    margin: 0;
     list-style: none;
+
+    li {
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      &::before {
+        font-family:"FontAwesome";
+        content: '\f054';
+        display: inline;
+        margin-right: 4px;
+      }
+    }
   }
 }
 
 #slideMenuOut {
-  transition: 0.3s all;
+  transition: 0.5s all;
   &.open {
     transform:translateX(-70%);
     position: fixed;
+    @include mq-md {
+      transform:translateX(-30%);
+    }
   }
 }
 
