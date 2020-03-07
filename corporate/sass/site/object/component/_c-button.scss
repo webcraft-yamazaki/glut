@@ -1,0 +1,27 @@
+$class : '.c-button';
+
+#{$class} {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 10px;
+  background-color: $color__site-main;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-indent: 4px;
+
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: #fff;
+  }
+
+
+  &--small {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+}

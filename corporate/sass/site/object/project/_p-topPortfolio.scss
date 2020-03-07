@@ -1,0 +1,30 @@
+$class : '.p-topPortfolio';
+
+#{$class} {
+  padding:40px 0;
+
+  &__content {
+    #{$class}__title {
+      font-size: 0.9rem;
+      color: #6f6e6e;
+      margin-bottom: 20px;
+      span {
+        font-size: 1.8rem;
+        color: $color__text-main;
+        margin-bottom: 2px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__img {
+    background-color: #ececec;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    #{$class}__button {
+
+    }
+  }
+}

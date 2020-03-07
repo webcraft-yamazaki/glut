@@ -1,0 +1,13 @@
+.p-blogList {
+  &__title {
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__wrap {
+    .c-blogThumbnailMenu {
+      margin-bottom: 10px;
+    }
+  }
+}
