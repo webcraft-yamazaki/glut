@@ -20,6 +20,7 @@ $class : '.p-topPortfolio';
         font-size: 1rem;
         margin-left: auto;
         margin-right: 160px;
+
       }
       span {
         font-size: 1.8rem;
@@ -35,7 +36,7 @@ $class : '.p-topPortfolio';
       @include mq-md {
         width: 340px;
         margin-left: auto;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 2;
         letter-spacing: 2px;
         margin-right: 160px;

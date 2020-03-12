@@ -16,7 +16,7 @@ $class : '.c-thumbnailMenu';
   &__bgc {
     padding:   100px 0 80px;
     @include mq-md {
-      padding: 140px 0;
+      padding: 200px 0;
     }
 
     @include state( $class , "--service") {
@@ -29,10 +29,10 @@ $class : '.c-thumbnailMenu';
     #{$class}__title {
       margin: 8px auto;
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.8;
       @include mq-md {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: bold;
       }
       &--english {
@@ -45,22 +45,21 @@ $class : '.c-thumbnailMenu';
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid #fff;
     border-radius: 100%;
+    border: 1px solid #fff;
     line-height: 50px;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     letter-spacing: 2px;
     text-align: center;
     text-indent: 2px;
     margin-top: 10px;
     @include mq-md {
-      border: 2px solid #fff;
+      border: 1px solid #fff;
       font-weight: bold;
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
-      font-size: 1rem;
+      width: 50px;
+      height: 50px;
+      font-size: 0.7rem;
     }
   }
 }
