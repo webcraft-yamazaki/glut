@@ -9,12 +9,14 @@ $class : '.p-topPortfolio';
 
   &__content {
     @include mq-md {
-      padding-top: 160px;
+      padding-top: 240px;
+      padding-bottom: 240px;
     }
     #{$class}__title {
       font-size: 0.9rem;
       color: #6f6e6e;
       margin-bottom: 20px;
+      letter-spacing: 6px;
       @include mq-md {
         width: 340px;
         font-size: 1rem;
@@ -47,22 +49,25 @@ $class : '.p-topPortfolio';
   &__img {
     background-color: #ececec;
     position: relative;
-
+    background-image: url(./images/portfolio.jpg);
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+    background-size: cover;
     img {
-      margin-top: 10px;
-      padding: 20px;
       max-width: 100%;
       display: block;
       z-index: 100;
       position: relative;
       margin-bottom: 20px;
+      padding: 20px;
       @include mq-md {
         min-width: 570px;
         max-width: 760px!important;
         width: 100%;
         max-width: none;
-        padding-top: 180px;
-        margin-left: -169px;
+        padding: 0;
+        padding-top: 160px;
+        margin-left: -8.88%;
         margin-bottom: 30px;
       }
     }
@@ -73,8 +78,12 @@ $class : '.p-topPortfolio';
       position: relative;
       @include mq-md {
         padding: 0 0 30px;
-        width: 66.66%;
+        width: 100%;
         max-width: 572px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width: 66.66%;
+        // margin-left: -8.88% ;
       }
     }
 
@@ -96,3 +105,4 @@ $class : '.p-topPortfolio';
     }
   }
 }
+
