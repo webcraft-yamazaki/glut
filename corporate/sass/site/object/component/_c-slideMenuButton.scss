@@ -4,7 +4,7 @@ $class:'.c-slideMenuButton';
 #{$class} {
   position: absolute;
   display: inline-block;
-  top:38px;
+  top:32px;
   right:16px;
   @include mq-md {
     position: static;

@@ -1,0 +1,23 @@
+
+$class : '.c-snsLink';
+
+#{$class} {
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+  line-height: 1;
+  border-radius: 100%;
+  color: $color__text-main;
+  display: inline-block;
+  font-size: 0.8rem;
+  @include mq-md {
+    padding: 7px;
+  }
+
+  &--black {
+    @extend #{$class};
+    color: #fff;
+    background-color: $color__site-main;
+    }
+}
