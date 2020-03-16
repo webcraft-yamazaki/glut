@@ -1,0 +1,40 @@
+.p-sectionTitle {
+  background-color: $color__site-main;
+  padding: 10px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__text {
+    color: #fff;
+    margin: 0;
+  }
+
+  &__input {
+    flex: 0 0 60%;
+    input {
+      width: 100%;
+      padding: 4px 36px 4px 10px;
+      font-size: 0.9rem;
+    }
+    input::placeholder {color: #cbcbcb;text-align: center;}
+    input:-ms-input-placeholder {color: #cbcbcb;text-align: center;}
+    input::-webkit-input-placeholder {color: #cbcbcb;text-align: center;}
+    input::-moz-placeholder {color: #cbcbcb;text-align: center;}
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #cbcbcb;
+      position: absolute;
+      right: 10px;
+      height: 34px;
+      .fas {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

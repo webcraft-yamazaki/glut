@@ -29,12 +29,20 @@
 @import "object/component/c-blogThumbnailMenu";
 @import "object/component/c-bgText";
 @import "object/component/c-snsLink";
+@import "object/component/c-listWithThumbnail";
+@import "object/component/c-outlineButton";
+@import "object/component/c-breadcrumb";
+@import "object/component/c-pager";
 
 /*--- #Project ---*/
 @import "object/project/p-mainVisual";
 @import "object/project/p-topPortfolio";
 @import "object/project/p-blogList";
 @import "object/project/p-drawerMenu";
+@import "object/project/p-pageTitle";
+@import "object/project/p-sectionTitle";
+@import "object/project/p-articleList";
+@import "object/project/p-siteAuthorProfile";
 
 
 /*--- #Utility  ---*/

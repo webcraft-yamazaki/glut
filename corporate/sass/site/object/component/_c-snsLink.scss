@@ -16,8 +16,12 @@ $class : '.c-snsLink';
   }
 
   &--black {
-    @extend #{$class};
     color: #fff;
     background-color: $color__site-main;
     }
+
+  &--big {
+      padding: 10px;
+      font-size: 1rem;
+  }
 }
