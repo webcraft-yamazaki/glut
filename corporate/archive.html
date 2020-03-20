@@ -35,6 +35,7 @@
     </header>
     <div class="site-content">
       <div class="p-pageTitle container-fluid">
+        <div class="container-md px-0">
         <h2 class="p-pageTitle__title">
           GLUT BLOG
         </h2>
@@ -51,17 +52,26 @@
         <div class="p-pageTitle__img">
           <img src="./images/blog_example_img.jpg" alt="">
         </div>
-      </div>
-
-      <div class="p-sectionTitle">
-        <p class="p-sectionTitle__text">記事一覧</p>
-        <div class="p-sectionTitle__input">
-          <form action="./"><input type="text" placeholder="キーワード検索"><button type="submit"><i class="fas fa-search"></i></form>
         </div>
       </div>
 
-      <div class="container">
-        <div class="content-area">
+      <div class="p-sectionTitle mb-2 mb-md-5">
+        <div class="container px-0">
+          <div class="row m-0 align-items-center justify-content-md-between">
+            <div class="col-4">
+              <p class="p-sectionTitle__text">記事一覧</p>
+            </div>
+            <div class="col-8 col-md-5">
+              <div class="p-sectionTitle__input">
+                <form action="./"><input type="text" placeholder="キーワード検索"><button type="submit"><i class="fas fa-search"></i></form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-md-0">
+        <div class="content-area pr-md-5">
           <main class="site-main">
             <div class="p-articleList">
               <ul>
@@ -163,7 +173,7 @@
             </div>
           </main>
         </div>
-        <aside class="widget-area">
+        <aside class="widget-area pl-md-2">
           <div class="p-siteAuthorProfile">
             <div class="p-siteAuthorProfile__img">
               <img src="./images/blog_example_img.jpg" alt="">

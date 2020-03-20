@@ -9,6 +9,9 @@ $class:".c-listWithThumbnail";
   align-items: center;
   padding: 15px 0;
   border-bottom: 1px solid #ececec;
+  @include mq-md {
+    padding: 20px 0;
+  }
 
   &__sub {
     flex:0 0 36%;
@@ -16,6 +19,10 @@ $class:".c-listWithThumbnail";
     overflow: hidden;
     height: 120px;
     margin-right: 4%;
+    @include mq-md {
+      width: 300px;
+      height: 180px;
+    }
 
     img {
       position: absolute;
@@ -27,10 +34,25 @@ $class:".c-listWithThumbnail";
       height: 100%;
       width: auto;
       max-width: none;
+      @include mq-md {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
   &__main {
+    @include mq-md {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 180px;
+      flex-wrap: wrap;
+      justify-content:start;
+      position: relative;
+    }
     &::after {
       @include clearfix;
     }
@@ -39,12 +61,21 @@ $class:".c-listWithThumbnail";
       margin: 0;
       padding: 0;
       display: block;
+      @include mq-md {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
     }
     #{$class}__title {
       font-size: 0.9rem;
       line-height: 1.5;
       margin: 0 0 4px;
       padding: 0;
+      @include mq-md {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        line-height: 1.7;
+      }
     }
     #{$class}__category {
       font-size: 0.7rem;
@@ -52,6 +83,9 @@ $class:".c-listWithThumbnail";
       padding: 0;
       color: #1777ba;
       float: left;
+      @include mq-md {
+        font-size: 0.9rem;
+      }
     }
     #{$class}__author {
       width: 30px;
@@ -64,6 +98,13 @@ $class:".c-listWithThumbnail";
       background-repeat: no-repeat;
       background-size: cover;
       box-shadow: 0 2px 3px rgba(0,0,0,0.26);
+      @include mq-md {
+        position: absolute;
+        right:0;
+        bottom:0;
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }

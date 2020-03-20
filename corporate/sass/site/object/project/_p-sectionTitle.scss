@@ -1,24 +1,51 @@
 .p-sectionTitle {
-  background-color: $color__site-main;
-  padding: 10px;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  @include mq-md {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .container {
+    background-color: $color__site-main;
+    padding: 10px 0;
+    @include mq-md {
+      padding: 20px 0;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        background-color: $color__site-main;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 200%;
+        height: 100%;
+        z-index: 0;
+      }
+    }
+  }
 
   &__text {
     color: #fff;
     margin: 0;
+    position: relative;
+    z-index: 10;
+    @include mq-md {
+      padding-left: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
   }
 
   &__input {
-    flex: 0 0 60%;
+    position: relative;
+    z-index: 10;
     input {
       width: 100%;
       padding: 4px 36px 4px 10px;
       font-size: 0.9rem;
+      @include mq-md {
+        padding: 12px 36px 12px 10px;
+        font-size: 1.2rem;
+      }
     }
     input::placeholder {color: #cbcbcb;text-align: center;}
     input:-ms-input-placeholder {color: #cbcbcb;text-align: center;}
@@ -32,8 +59,15 @@
       position: absolute;
       right: 10px;
       height: 34px;
+      @include mq-md {
+        right: 4px;
+        height: 54px;
+      }
       .fas {
         font-size: 1.3rem;
+        @include mq-md {
+          font-size: 2.2rem;
+        }
       }
     }
   }

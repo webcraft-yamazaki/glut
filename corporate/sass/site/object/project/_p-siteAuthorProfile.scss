@@ -8,6 +8,9 @@
     margin: 0 auto;
     border: 1px solid #acacac;
     position: relative;
+    @include mq-md {
+      margin-bottom: 30px;
+    }
 
     img {
       position: absolute;
@@ -23,6 +26,9 @@
   }
   &__text {
     font-size: 0.9rem;
+    @include mq-md {
+      margin-bottom: 40px;
+    }
   }
 
   &__sns {

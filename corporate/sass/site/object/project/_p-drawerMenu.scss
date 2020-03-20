@@ -60,6 +60,7 @@ $class : '.p-drawerMenu ';
     position: fixed;
     @include mq-md {
       transform:translateX(-30%);
+      position: static;
     }
   }
 }
