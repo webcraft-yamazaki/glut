@@ -55,12 +55,15 @@ $class : '.p-drawerMenu ';
 
 #slideMenuOut {
   transition: 0.5s all;
+  position: relative;
+  right: 0;
   &.open {
-    transform:translateX(-70%);
-    position: fixed;
+    right:70%;
+    // transform:translateX(-70%);
     @include mq-md {
-      transform:translateX(-30%);
-      position: static;
+      // transform:translateX(-30%);
+      right:30%;
+      // position: static;
     }
   }
 }

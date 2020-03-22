@@ -4,11 +4,13 @@ $('#slideMenuButton').on('click',function(){
     $('#slideMenuOut').addClass('open');
     $('#slideMenuButton').addClass('open');
     $('#slideMenuOverlay').addClass('open');
+    $('.l-header').addClass('open');
   } else {
     $('#slideMenuIn').removeClass('open');
     $('#slideMenuOut').removeClass('open');
     $('#slideMenuButton').removeClass('open');
     $('#slideMenuOverlay').removeClass('open');
+    $('.l-header').removeClass('open');
   }
 })
 
@@ -18,5 +20,6 @@ $('#slideMenuOverlay').on('click',function(){
     $('#slideMenuOut').removeClass('open');
     $('#slideMenuButton').removeClass('open');
     $('#slideMenuOverlay').removeClass('open');
+    $('.l-header').removeClass('open');
   }
 })
