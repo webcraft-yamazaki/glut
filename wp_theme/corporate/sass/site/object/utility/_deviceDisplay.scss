@@ -1,0 +1,10 @@
+@media only screen and (max-width: $md-width - 1) {
+  .sp-none {
+    display: none;
+  }
+}
+@include mq-md {
+    .pc-none {
+        display: none;
+    }
+}

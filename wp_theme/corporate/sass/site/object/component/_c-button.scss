@@ -1,0 +1,35 @@
+$class : '.c-button';
+
+#{$class} {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 10px;
+  background-color: $color__site-main;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+  text-indent: 4px;
+  @include mq-md {
+  padding: 30px 10px;
+  font-size: 1rem;
+}
+
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: #fff;
+  }
+
+
+  &--small {
+    padding: 5px;
+    font-size: 0.7rem;
+    @include mq-md {
+      font-size: 0.7rem;
+      padding: 10px;
+    }
+  }
+}

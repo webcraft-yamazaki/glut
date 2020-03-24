@@ -1,0 +1,15 @@
+.l-header {
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    right:0;
+    transition: 0.5s all;
+
+    &.open {
+      right:70%;
+      @include mq-md {
+        right: 30%;
+      }
+    }
+
+}

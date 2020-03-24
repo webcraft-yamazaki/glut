@@ -1,0 +1,41 @@
+.c-pager {
+  &__count {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include mq-md {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $color__site-main;
+    border-bottom: 1px solid $color__site-main;
+    margin-bottom: 30px;
+
+    a {
+      display: inline-block;
+      padding: 4px 12px;
+      @include mq-md {
+        font-size: 1.2rem;
+        padding: 10px 18px;
+      }
+
+      &.current {
+        background-color: $color__site-main;
+        color: #fff;
+      }
+
+      &.last {
+        margin-left: 30px;
+        @include mq-md {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}

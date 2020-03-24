@@ -1,0 +1,37 @@
+.c-breadcrumb {
+  color: $color__text-main;
+  padding: 0 0 0 10px;
+  margin: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+
+  a,
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active {
+    color: $color__text-main;
+  }
+
+  li {
+
+    &:last-child {
+      padding-right: 10px;
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "/";
+      display: inline;
+      margin: 0 6px;
+    }
+  }
+}
