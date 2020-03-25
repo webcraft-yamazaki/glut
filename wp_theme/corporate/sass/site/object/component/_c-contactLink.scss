@@ -7,4 +7,9 @@
   padding: 8px 30px;
   line-height: 1;
   letter-spacing: 6px;
+  transition: .4s ease('ease');
+  &:hover {
+    background-color: $color__site-main;
+    color: #fff!important;
+  }
 }

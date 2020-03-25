@@ -86,6 +86,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
+# Easing
+--------------------------------------------------------------*/
+@import "modules/easing-function";
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 @import "site/secondary/widgets";

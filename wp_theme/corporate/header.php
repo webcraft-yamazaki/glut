@@ -23,7 +23,13 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('fo2'); ?>>
+	<div class="fade_group">
+		<div></div>
+	</div>
+	<div class="fade_group2">
+		<div></div>
+	</div>
 <div id="slideMenuOut" class="">
 <div id="page" class="site">
 	<header id="masthead" class="l-header container-fluid py-2">

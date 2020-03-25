@@ -31,7 +31,10 @@
       }
 
       &.last {
-        margin-left: 10px;
+        margin-left: 30px;
+        @include mq-md {
+          margin-left: 50px;
+        }
       }
     }
   }

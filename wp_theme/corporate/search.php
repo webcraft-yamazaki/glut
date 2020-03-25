@@ -27,25 +27,23 @@
  	<div class="p-archiveTitle__breadcrumb">
  		<?php breadcrumb(); ?>
  	</div>
- 	<div class="p-archiveTitle__img">
- 		<?php $wp_query = new WP_Query($args);
- 		$post_img = $wp_query->posts;
-
- 		?>
- 		<img src="<?php echo get_the_post_thumbnail_url( $post_img[0]->ID, 'large' ); ?>" alt="">
- 		<?php wp_reset_query(); ?>
- 	</div>
+  <?php $wp_query = new WP_Query($args);
+	$post_img = $wp_query->posts;
+	?>
+	<div class="p-archiveTitle__img" style="background-image: url(<?php echo get_the_post_thumbnail_url( $post_img[0]->ID, 'large' ); ?>);">
+	</div>
+	<?php wp_reset_query(); ?>
  	</div>
  </div>
  <div class="p-sectionTitle mb-2 mb-md-5">
  	<div class="container px-0">
  		<div class="row m-0 align-items-center justify-content-md-between">
  			<div class="col-4">
- 				<p class="p-sectionTitle__text"><?php echo 'search : '.get_search_query(); ?></p>
+ 				<p class="p-sectionTitle__text">記事一覧</p>
  			</div>
  			<div class="col-8 col-md-5">
  				<div class="p-sectionTitle__input">
- 					<form  role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" method="get"><input type="text" name="s" id="s" placeholder="キーワード検索"><button type="submit"><i class="fas fa-search"></i></form>
+ 					<form  role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" method="get"><input type="text" name="s" id="s" placeholder="キーワード検索" value="<?php echo get_search_query(); ?>"><button type="submit"><i class="fas fa-search"></i></form>
  				</div>
  			</div>
  		</div>

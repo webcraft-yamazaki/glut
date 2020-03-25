@@ -5,4 +5,9 @@
   padding: 16px 10px;
   font-weight: bold;
   margin-bottom: 10px;
+  transition: .4s ease('ease');
+  &:hover {
+    background-color: $color__site-main;
+    color: #fff!important;
+  }
 }

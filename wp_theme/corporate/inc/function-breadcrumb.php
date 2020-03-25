@@ -15,11 +15,11 @@ function breadcrumb(){
     if($cat->parent != 0){
       $ancestors = array_reverse(get_ancestors($cat->cat_ID, 'category'));
       foreach($ancestors as $ancestor){
-        $str.= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="'. get_category_link($ancestor).'"><span itemprop="name">'.get_cat_name($ancestor).'</span></a><meta itemprop="position" content="'.$pNum.'"></li>';
+        $str.= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="'. get_permalink( 7 ) .'"><span itemprop="name">記事一覧</span></a><meta itemprop="position" content="'.$pNum.'"></li>';
         $pNum++;
       }
     }
-    $str.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="'. get_category_link($cat-> term_id). '"><span itemprop="name">'. $cat-> cat_name . '</span></a><meta itemprop="position" content="'.$pNum.'"></li>';
+    $str.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="'. get_permalink( 7 ) . '"><span itemprop="name">記事一覧</span></a><meta itemprop="position" content="'.$pNum.'"></li>';
     $pNum++;
     $str.= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">'.$post->post_title.'</span><meta itemprop="position" content="'.$pNum.'"></li>';
   }

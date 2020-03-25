@@ -6,6 +6,13 @@
 	}
 }
 
+.page .site-content {
+
+	@include mq-md {
+		background-color: #f6f6f6;
+	}
+}
+
 .content-area {
 	width: 100%;
 	float: none;

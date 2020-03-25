@@ -9,7 +9,7 @@ $class : '.p-drawerMenu ';
   height: 100%;
   color: #fff;
   background-color: $color__site-main;
-  transition: 0.5s;
+  transition: 1s ease('easeOutQuint');
   padding: 0 20px;
   @include mq-md {
     right:-30%;
@@ -54,7 +54,7 @@ $class : '.p-drawerMenu ';
 }
 
 #slideMenuOut {
-  transition: 0.5s all;
+  transition: 1s ease('easeOutQuint');
   position: relative;
   right: 0;
   &.open {

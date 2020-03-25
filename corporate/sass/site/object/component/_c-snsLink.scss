@@ -8,7 +8,7 @@ $class : '.c-snsLink';
   padding: 4px;
   line-height: 1;
   border-radius: 100%;
-  color: $color__text-main;
+  color: $color__text-main !important;
   display: inline-block;
   font-size: 0.8rem;
   @include mq-md {
@@ -16,7 +16,7 @@ $class : '.c-snsLink';
   }
 
   &--black {
-    color: #fff;
+    color: #fff !important;
     background-color: $color__site-main;
     }
 

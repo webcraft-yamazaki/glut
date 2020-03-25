@@ -26,14 +26,12 @@ $args = array(
 	<div class="p-archiveTitle__breadcrumb">
 		<?php breadcrumb(); ?>
 	</div>
-	<div class="p-archiveTitle__img">
-		<?php $wp_query = new WP_Query($args);
-		$post_img = $wp_query->posts;
-
-		?>
-		<img src="<?php echo get_the_post_thumbnail_url( $post_img[0]->ID, 'large' ); ?>" alt="">
-		<?php wp_reset_query(); ?>
+	<?php $wp_query = new WP_Query($args);
+	$post_img = $wp_query->posts;
+	?>
+	<div class="p-archiveTitle__img" style="background-image: url(<?php echo get_the_post_thumbnail_url( $post_img[0]->ID, 'large' ); ?>);">
 	</div>
+	<?php wp_reset_query(); ?>
 	</div>
 </div>
 <div class="p-sectionTitle mb-2 mb-md-5">

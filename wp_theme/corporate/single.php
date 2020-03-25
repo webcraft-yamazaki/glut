@@ -17,7 +17,7 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 
 	<div class="container-md px-md-0 mb-2">
 		<div class="row justify-content-md-center">
-			<div class="col-md-8 px-0">
+			<div class="col-md-7 px-0">
 			<?php breadcrumb(); ?>
 		</div>
 		</div>
@@ -26,7 +26,7 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 	<div class="container p-md-0 no-sidebar">
 
 		<div id="primary" class="content-area row justify-content-md-center">
-			<main id="main" class="site-main col-md-8 px-0">
+			<main id="main" class="site-main col-md-7 px-0">
 				<article id="post-<?php the_ID(); ?>" <?php post_class('p-entryContent'); ?>>
 					<?php if ( have_posts() ) : ?>
 						<?php while( have_posts() ) : the_post(); ?>

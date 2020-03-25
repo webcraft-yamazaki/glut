@@ -34,8 +34,8 @@ $class:".c-listWithThumbnail";
       width: auto;
       max-width: none;
       @include mq-md {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
       }
     }
   }

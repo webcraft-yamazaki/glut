@@ -10,6 +10,8 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   width: 100%;
+  white-space: nowrap;
+
 
   a,
   a:visited,
@@ -20,10 +22,17 @@
   }
 
   li {
-    margin-right: 10px;
-
     &:last-child {
       padding-right: 10px;
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "/";
+      display: inline;
+      margin: 0 6px;
     }
   }
 }

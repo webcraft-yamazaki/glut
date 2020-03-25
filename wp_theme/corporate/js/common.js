@@ -1,3 +1,7 @@
+/*
+ドロワーメニュー
+----------------
+*/
 $('#slideMenuButton').on('click',function(){
   if(!$(this).hasClass('open')){
     $('#slideMenuIn').addClass('open');
@@ -23,3 +27,35 @@ $('#slideMenuOverlay').on('click',function(){
     $('.l-header').removeClass('open');
   }
 })
+/*
+----------------
+*/
+
+/*
+ページ推移
+----------------
+*/
+$('a:not([href^="#"]):not([target])').on('click', function(){
+  $('body').addClass('fo');
+});
+
+$(window).on('load', function(){
+  $('body').removeClass('fo2');
+});
+
+$(function() {
+  $('a:not([href^="#"]):not([target])').on('click', function(e){
+      e.preventDefault();
+      url = $(this).attr('href');
+      if (url !== '') {
+          $('body').addClass('fadeout');
+          setTimeout(function(){
+              window.location = url;
+          }, 800);
+      }
+      return false;
+  });
+});
+/*
+----------------
+*/

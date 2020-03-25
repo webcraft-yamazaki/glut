@@ -22,7 +22,7 @@ get_header();
     <p class="p-mainVisual__subText"><span>ニーズを100%超える価値を創り提供する</span><br class="d-block d-md-none"><span>WEBクリエイターチーム</span></p>
     <p class="p-mainVisual__logo"><span>-GLUT-</span><br>グラット</p>
   </div>
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 px-0">
         <a class="c-thumbnailMenu c-thumbnailMenu--service" href="#">
@@ -47,7 +47,7 @@ get_header();
         </a>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="p-topPortfolio container-fluid">
     <div class="row">
       <div class="col-md-6 p-topPortfolio__content">
@@ -63,9 +63,9 @@ get_header();
       <div class="col-md-6 p-0 p-topPortfolio__img">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/portfolio.jpg" alt="plage ネイルサロン">
         <div class="p-topPortfolio__button">
-          <a class="c-button" href="#">
+          <!-- <a class="c-button" href="#">
             VIEW WORKS
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@ get_header();
 		?>
     <div class="c-blogThumbnailMenu">
       <a href="<?php the_permalink( $post ); ?>">
-      <div class="c-blogThumbnailMenu__img" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>)"><span class="c-blogThumbnailMenu__cate"><?php echo $category[0]->cat_name; ?></span></div>
+      <div class="c-blogThumbnailMenu__img" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>)"><!--<span class="c-blogThumbnailMenu__cate"><?php echo $category[0]->cat_name; ?></span>--></div>
       <p class="c-blogThumbnailMenu__text"><?php echo the_title(); ?></p>
       </a>
     </div>

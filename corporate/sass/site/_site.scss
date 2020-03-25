@@ -5,6 +5,7 @@
 ## Posts and pages
 --------------------------------------------------------------*/
 @import "primary/posts-and-pages";
+@import "primary/script";
 
 /*--------------------------------------------------------------
 ## Comments
@@ -40,10 +41,12 @@
 @import "object/project/p-blogList";
 @import "object/project/p-drawerMenu";
 @import "object/project/p-pageTitle";
+@import "object/project/p-archiveTitle";
 @import "object/project/p-sectionTitle";
 @import "object/project/p-articleList";
 @import "object/project/p-siteAuthorProfile";
 @import "object/project/p-entryContent";
+@import "object/project/p-contactForm";
 
 
 /*--- #Utility  ---*/
