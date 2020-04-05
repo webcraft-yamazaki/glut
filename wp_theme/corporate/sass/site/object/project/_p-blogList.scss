@@ -20,6 +20,10 @@ $class : '.p-blogList' ;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    flex-wrap: wrap;
+    @include mq-md {
+      flex-wrap: nowrap;
+    }
     .c-blogThumbnailMenu {
       margin-bottom: 10px;
       flex: 0 1 50%;
