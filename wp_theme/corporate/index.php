@@ -74,7 +74,7 @@ get_header();
 </div>
 
 <aside class="p-blogList">
-  <div class="p-blogList__title container mb-3 mb-md-5">
+  <div class="p-blogList__title container pl-md-5 mb-3 mb-md-5">
     <div class="row align-items-center justify-content-between">
       <div class="col-8 col-md-10">
         <h2>GLUT BLOG</h2>

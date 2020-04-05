@@ -87,17 +87,15 @@
  											<a class="c-listWithThumbnail__category" href="<?php echo get_category_link( $category[0]->term_id ); ?>">
  												<?php echo $category[0]->cat_name; ?>
  											</a>
- 											<a class="c-listWithThumbnail__author" style="background-image: url(<?php echo $avatar_img; ?>);"></a>
+ 											<span class="c-listWithThumbnail__author" style="background-image: url(<?php echo $avatar_img; ?>);"></span>
  										</div>
  									</div>
  								</li>
  								<?php
  				    }
  				}
-
  				?>
  			</ul>
-
  					<?php
  					if (function_exists("pagination")) {
  			        pagination($my_query->max_num_pages);

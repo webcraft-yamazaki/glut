@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<div id="content" class="site-content pt-4 pt-md-2">
+<div id="content" class="site-content pt-0">
 	<div class="p-pageTitle container-fluid">
 	<div class="container-md px-0">
 	<h2 class="p-pageTitle__title">

@@ -1,15 +1,15 @@
 .site-content {
-	padding-top: 78px;
+	// padding-top: 78px;
 	padding-bottom: 60px;
 	@include mq-md {
-		padding-top: 82px;
+		// padding-top: 82px;
 	}
 }
 
 .page .site-content {
-
 	@include mq-md {
 		background-color: #f6f6f6;
+		padding-bottom: 150px;
 	}
 }
 

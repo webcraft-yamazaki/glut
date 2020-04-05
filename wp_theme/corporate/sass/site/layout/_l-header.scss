@@ -4,6 +4,7 @@
     top:0;
     right:0;
     transition: 1s ease('easeOutQuint');
+    background-color: #fff;
 
     &.open {
       right:70%;

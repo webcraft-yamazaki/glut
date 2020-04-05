@@ -17,7 +17,7 @@ $args = array(
 
 ?>
 
-<div id="content" class="site-content" style="background-color:#fff;">
+<div id="content" class="site-content pt-4" style="background-color:#fff;">
 	<div class="p-archiveTitle container-fluid">
 	<div class="container-md px-0">
 	<h2 class="p-archiveTitle__title">
@@ -86,7 +86,7 @@ $args = array(
 											<a class="c-listWithThumbnail__category" href="<?php echo get_category_link( $category[0]->term_id ); ?>">
 												<?php echo $category[0]->cat_name; ?>
 											</a>
-											<a class="c-listWithThumbnail__author" style="background-image: url(<?php echo $avatar_img; ?>);"></a>
+											<span class="c-listWithThumbnail__author" style="background-image: url(<?php echo $avatar_img; ?>);"></span>
 										</div>
 									</div>
 								</li>

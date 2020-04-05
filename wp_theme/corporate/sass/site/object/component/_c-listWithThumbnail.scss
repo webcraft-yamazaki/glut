@@ -30,12 +30,12 @@ $class:".c-listWithThumbnail";
       bottom:-100%;
       left:-100%;
       margin: auto;
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
       max-width: none;
       @include mq-md {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
       }
     }
   }
