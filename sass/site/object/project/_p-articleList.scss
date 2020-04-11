@@ -1,0 +1,19 @@
+.p-articleList {
+  margin-bottom: 60px;
+  ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    @include mq-md {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 20px;
+    @include mq-md {
+      width: 380px;
+      margin: 0 auto;
+    }
+  }
+}

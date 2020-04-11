@@ -1,0 +1,19 @@
+$class:'.c-bgText';
+
+#{$class} {
+  text-align: center;
+  font-size: 16vw;
+  font-weight: bold;
+  color: #f6f6f6;
+  line-height: 1;
+  font-family: 'Anton';
+  margin-bottom: -10px;
+  position: relative;
+  z-index: -1;
+  @include mq-md {
+    font-size: 13rem;
+    letter-spacing: 30px;
+    margin-bottom: -40px;
+
+  }
+}

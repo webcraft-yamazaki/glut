@@ -1,0 +1,31 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	// margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	// margin: 1.5em 0 0;
+	line-height: 2;
+	h1,h2,h3,h4,h5 {
+		line-height: 1.5;
+	}
+	ul,ol {
+		margin-left: 0;
+		padding-left: 30px;
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

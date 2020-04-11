@@ -1,0 +1,106 @@
+
+$class:".c-listWithThumbnail";
+
+#{$class} {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: start;
+  padding: 15px 0;
+  border-bottom: 1px solid #ececec;
+  @include mq-md {
+    padding: 20px 0;
+  }
+
+  &__sub {
+    flex:0 0 36%;
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    margin-right: 4%;
+    @include mq-md {
+      width: 300px;
+      height: 180px;
+    }
+
+    img {
+      position: absolute;
+      top:-100%;
+      right:-100%;
+      bottom:-100%;
+      left:-100%;
+      margin: auto;
+      height: auto;
+      width: 100%;
+      max-width: none;
+      @include mq-md {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__main {
+    width: 100%;
+    position: relative;
+    @include mq-md {
+      width: 100%;
+      height: 180px;
+    }
+    &::after {
+      @include clearfix;
+    }
+    #{$class}__date {
+      font-size: 0.8rem;
+      margin: 0 0 4px;
+      padding: 0;
+      display: block;
+      @include mq-md {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+      }
+    }
+    #{$class}__title {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0 0 4px;
+      padding: 0;
+      @include mq-md {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin-bottom: 6px;
+      }
+    }
+    #{$class}__category {
+      font-size: 0.7rem;
+      margin: 0;
+      padding: 0;
+      color: #1777ba;
+      float: left;
+      @include mq-md {
+        font-size: 0.9rem;
+      }
+    }
+    #{$class}__author {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #000;
+      position: absolute;
+      right:0;
+      bottom:10px;
+      background-image: url(./images/blog_example_img.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+      @include mq-md {
+        position: absolute;
+        right:0;
+        bottom:0;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
