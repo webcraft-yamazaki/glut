@@ -11,6 +11,9 @@
   overflow-x: auto;
   width: 100%;
   white-space: nowrap;
+  @include mq-md{
+    padding: 0;
+  }
 
 
   a,
