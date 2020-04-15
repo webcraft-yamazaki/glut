@@ -39,5 +39,5 @@
 
 </body>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-<script src="https://kit.fontawesome.com/f826fffb9d.js" crossorigin="anonymous"></script>
+<!-- <script src="https://kit.fontawesome.com/f826fffb9d.js" crossorigin="anonymous"></script> -->
 </html>

@@ -8,6 +8,12 @@
 
 .page .site-content {
 	@include mq-md {
+		padding-bottom: 150px;
+	}
+}
+
+.page-id-18 .site-content {
+	@include mq-md {
 		background-color: #f6f6f6;
 		padding-bottom: 150px;
 	}
