@@ -8,15 +8,15 @@
  */
 
  get_header();
-
+ $categories = get_the_category();
  $args = array(
  		'post_type' => 'post',
- 		'paged' => $paged,
+		'paged' => $paged,
+		'cat' => $categories[0]->term_id,
  		'posts_per_page' => get_option('posts_per_page'), //表示する件数
   );
 
  ?>
-
  <div id="content" class="site-content" style="background-color:#fff;">
  	<div class="p-archiveTitle container-fluid">
  	<div class="container-md px-0">
