@@ -19,9 +19,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/brands.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/solid.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<?php wp_head(); ?>
 </head>
