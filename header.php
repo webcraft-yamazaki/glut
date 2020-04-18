@@ -18,7 +18,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="preload" as="style">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<?php wp_head(); ?>
 </head>
