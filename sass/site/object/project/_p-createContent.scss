@@ -1,0 +1,35 @@
+.p-createContent {
+  padding: 0 10px;
+  h2 {
+    margin: 0;
+    text-align: center;
+    @include mq-md {
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-size: 13px;
+    text-align: center;
+    margin: 0.8rem 0;
+    @include mq-md {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+  }
+  &__button {
+    @include mq-md {
+      width: 50%;
+      margin-left: auto;
+      padding-right: 124px;
+    }
+  }
+}
+#tabImg_content {
+  display: none;
+}
+#tabWeb_content {
+  display: block;
+}
+#tabLP_content {
+  display: none;
+}

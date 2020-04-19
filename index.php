@@ -14,21 +14,22 @@
 
 get_header();
 ?>
+
 <div id="content" class="site-content no-sidebar">
 	<div id="primary" class="content-area">
 <main id="main" class="site-main">
-  <div class="p-mainVisual container">
-    <p class="p-mainVisual__mainText">JUST MAKE <br class="d-block d-md-none"> THE VALUE</p>
-    <p class="p-mainVisual__subText"><span>ニーズを100%超える価値を創り提供する</span><br class="d-block d-md-none"><span>WEBクリエイターチーム</span></p>
-    <p class="p-mainVisual__logo"><span>-GLUT-</span><br>グラット</p>
+  <div class="p-mainVisual">
+    <p class="p-mainVisual__mainText"><span class="hidetext">JUST MAKE <br class="d-block d-md-none"> THE VALUE</span></p>
+    <p class="p-mainVisual__subText"><span class="hidetext">ニーズを100%超える価値を創り提供する<br class="d-block d-md-none">WEBクリエイターチーム</span></p>
+    <p class="p-mainVisual__logo"><span class="hidetext">-GLUT-<br><span>グラット</span></span></p>
   </div>
-  <!-- <div class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 px-0">
         <a class="c-thumbnailMenu c-thumbnailMenu--service" href="#">
           <div class="c-thumbnailMenu__bgc">
             <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">OUR SERVICE</p>
-            <p class="c-thumbnailMenu__title">一緒に考え抜く、ウェブ戦略</p>
+            <p class="c-thumbnailMenu__title">一緒に考え抜く、ウェブ制作</p>
             <span class="c-thumbnailMenu__button">
               VIEW
             </span>
@@ -38,8 +39,8 @@ get_header();
       <div class="col-md-6 px-0">
         <a class="c-thumbnailMenu c-thumbnailMenu--design" href="#">
           <div class="c-thumbnailMenu__bgc">
-            <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">ABOUT US</p>
-            <p class="c-thumbnailMenu__title">グラットのデザインへの考え方</p>
+            <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">STRATEGY</p>
+            <p class="c-thumbnailMenu__title">グラットのWEB戦略</p>
             <span class="c-thumbnailMenu__button">
               VIEW
             </span>
@@ -47,7 +48,7 @@ get_header();
         </a>
       </div>
     </div>
-  </div> -->
+  </div>
   <div class="p-topPortfolio container-fluid">
     <div class="row">
       <div class="col-md-6 p-topPortfolio__content">
@@ -63,9 +64,9 @@ get_header();
       <div class="col-md-6 p-0 p-topPortfolio__img">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/portfolio.jpg" alt="plage ネイルサロン">
         <div class="p-topPortfolio__button">
-          <!-- <a class="c-button" href="#">
+          <a class="c-button" href="#">
             VIEW WORKS
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
@@ -78,9 +79,6 @@ get_header();
     <div class="row align-items-center justify-content-between">
       <div class="col-8 col-md-10">
         <h2>GLUT BLOG</h2>
-      </div>
-      <div class="col-4 col-md-2">
-        <a class="c-button c-button--small" href="<?php echo get_permalink( 7 ); ?>">VIEW ALL</a>
       </div>
     </div>
   </div>
@@ -106,10 +104,12 @@ get_header();
     </div>
 		<?php
 			}}
-		?>
+    ?>
   </div>
   </div>
-
+  <div class="row justify-content-center m-0">
+     <a class="c-button col-6 col-md-4" href="<?php echo get_permalink( 7 ); ?>">VIEW ALL</a>
+  </div>
 </aside>
 
 </div><!-- #content -->

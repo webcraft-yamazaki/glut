@@ -1,0 +1,59 @@
+.p-tabToggle {
+  background-color: #f6f6f6;
+  padding: 0;
+  margin: 50px 0 0;
+  position: relative;
+  @include mq-md {
+    margin: 0;
+  }
+
+  span.current {
+    width: 88px;
+    height: 3px;
+    background-color: #1777ba;
+    left:calc(50% - 44px);
+    bottom:0;
+    position: absolute;
+    transition: 0.3s ease('easeOutQuart');
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 16px 20px 10px;
+    cursor: pointer;
+    @include mq-md {
+      padding: 26px 20px 18px;
+      margin: 0 15px;
+    }
+    i {
+      font-size: 26px;
+      display: block;
+      color: #717171;
+      @include mq-md {
+        // font-size:50px;
+      }
+    }
+    span {
+      font-size: 11px;
+      color: #717171;
+      transition: 0.3s all;
+      @include mq-md {
+        font-size:13px;
+      }
+    }
+  }
+  &__item.active {
+    i,span {
+      color: #1777ba;
+    }
+  }
+}

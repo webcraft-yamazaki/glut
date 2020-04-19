@@ -34,10 +34,14 @@
 	?>
 </div>
 
-
 <?php wp_footer(); ?>
-
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-<script src="https://kit.fontawesome.com/f826fffb9d.js" crossorigin="anonymous" async></script>
+<!-- <script src="https://kit.fontawesome.com/f826fffb9d.js" crossorigin="anonymous"></script> -->
+
 </html>

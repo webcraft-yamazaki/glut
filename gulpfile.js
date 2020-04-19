@@ -50,14 +50,14 @@ gulp.task("sass", function(done) {
 // 監視ファイル
 gulp.task('watch-files', function(done) {
     gulp.watch("./sass/**/*.scss", gulp.task('sass'));
-		gulp.watch("./sass/**/*.scss", gulp.task('browser-reload'));
-    gulp.watch("./**/*.html", gulp.task('browser-reload'));
+		// gulp.watch("./sass/**/*.scss", gulp.task('browser-reload'));
+    // gulp.watch("./**/*.html", gulp.task('browser-reload'));
     done();
     console.log(('gulp watch started'));
 });
 
 // タスクの実行
-gulp.task('default', gulp.series('build-server', 'watch-files', function(done){
+gulp.task('default', gulp.series('watch-files', function(done){
     done();
     console.log('Default all task done!');
 }));
