@@ -27,7 +27,7 @@ get_header();
 		<ul class="container-md">
 			<li id="tabImg" class="p-tabToggle__item"><i class="far fa-images"></i><span>画像制作</span></li>
 			<li id="tabWeb" class="p-tabToggle__item active"><i class="fas fa-desktop"></i><span>WEB制作</span></li>
-			<li id="tabLP" class="p-tabToggle__item"><i class="far fa-sticky-note"></i><span>LP制作</span></li>
+			<!-- <li id="tabLP" class="p-tabToggle__item"><i class="far fa-sticky-note"></i><span>LP制作</span></li> -->
 		</ul>
 		<span class="current"></span>
 	</div>
@@ -47,7 +47,7 @@ get_header();
 						<div><img src="<?php echo get_template_directory_uri(); ?>/images/banner-image.jpg" alt="バナー制作""></div>
 						<br>
 						<br class="d-none d-md-block">
-						<div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div>
+						<!-- <div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div> -->
 					</div>
 					<div id="tabWeb_content" class="p-createContent">
 						<h2>
@@ -60,9 +60,9 @@ get_header();
 						<div><img src="<?php echo get_template_directory_uri(); ?>/images/web-image.jpg" alt="バナー制作""></div>
 						<br>
 						<br class="d-none d-md-block">
-						<div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div>
+						<!-- <div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div> -->
 					</div>
-					<div id="tabLP_content" class="p-createContent">
+					<!-- <div id="tabLP_content" class="p-createContent">
 					<h2>
 						
 						</h2>
@@ -74,7 +74,7 @@ get_header();
 						<br>
 						<br class="d-none d-md-block">
 						<div class="p-createContent__button align-center"><a class="c-button" href="#">LP制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div>
-					</div>
+					</div> -->
 					</article>
 				</main>
 			</div>

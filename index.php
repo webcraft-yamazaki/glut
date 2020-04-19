@@ -26,7 +26,7 @@ get_header();
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 px-0">
-        <a class="c-thumbnailMenu c-thumbnailMenu--service" href="#">
+        <a class="c-thumbnailMenu c-thumbnailMenu--service" href="<?php echo get_permalink( 233 ); ?>">
           <div class="c-thumbnailMenu__bgc">
             <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">OUR SERVICE</p>
             <p class="c-thumbnailMenu__title">一緒に考え抜く、ウェブ制作</p>
@@ -37,7 +37,7 @@ get_header();
         </a>
       </div>
       <div class="col-md-6 px-0">
-        <a class="c-thumbnailMenu c-thumbnailMenu--design" href="#">
+        <a class="c-thumbnailMenu c-thumbnailMenu--design" href="<?php echo get_permalink( 206 ); ?>">
           <div class="c-thumbnailMenu__bgc">
             <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">STRATEGY</p>
             <p class="c-thumbnailMenu__title">グラットのWEB戦略</p>
@@ -64,9 +64,9 @@ get_header();
       <div class="col-md-6 p-0 p-topPortfolio__img">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/portfolio.jpg" alt="plage ネイルサロン">
         <div class="p-topPortfolio__button">
-          <a class="c-button" href="#">
+          <!-- <a class="c-button" href="#">
             VIEW WORKS
-          </a>
+          </a> -->
         </div>
       </div>
     </div>

@@ -104,7 +104,7 @@ $class : '.p-mainVisual' ;
 	
 body {
   position: relative;
-  cursor: none!important; //もともとあるカーソルは見えなくなるようにする
+  // cursor: none!important; //もともとあるカーソルは見えなくなるようにする
 }
  
 .cursor,
@@ -113,7 +113,7 @@ body {
   position: absolute; //bodyの一番左上になるように配置する
   top: 0;
   left: 0; 
-  cursor: none; //もともとあるカーソルは見えなくなるようにする
+  // cursor: none; //もともとあるカーソルは見えなくなるようにする
   pointer-events: none; 
 }
  

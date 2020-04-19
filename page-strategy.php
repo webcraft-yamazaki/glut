@@ -62,10 +62,10 @@ get_header();
 		我々はクライアント様にとって最適なマーケティング手法を洗い出しご提案しています。
 		</p>
 		<div class="test__button">
-			<a class="c-button" href="#">
+			<!-- <a class="c-button" href="#">
 				実例を見る
 				<i class="fas fa-arrow-circle-right"></i>
-			</a>
+			</a> -->
 		</div>
 	</section>
 	
