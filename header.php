@@ -18,10 +18,7 @@
   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-	<link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/fontawesome.css" rel="stylesheet">
-	<link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/brands.css" rel="stylesheet">
-	<link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/solid.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="preload" as="style">
 
 <!-- 	
 	<script data-ad-client="ca-pub-4853317107094346" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
