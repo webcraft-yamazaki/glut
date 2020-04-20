@@ -57,6 +57,7 @@ $(function() {
   });
 });
 /*
+Title animation
 ----------------
 */
 
@@ -68,6 +69,33 @@ window.onload = function() {
   tl.play
 }
 
+/*
+Header scroll
+----------------
+*/
+
+var headerScroll = () =>{
+  var header = document.querySelector(".l-header");
+  var hH = header.clientHeight;
+  var pos = 0;
+  var lastPos = 0;
+
+  var onScroll = () => {
+    if(pos > hH && pos > lastPos) {
+      header.classList.add('header--unpinned');
+    }
+    if(pos < hH || pos < lastPos) {
+      header.classList.remove('header--unpinned');
+    }
+    lastPos = pos;
+  };
+
+  window.addEventListener("scroll", () => {
+    pos = window.scrollY;
+    onScroll();
+  });
+}
+headerScroll();
 
 // var
 // cursor = $(".cursor"),
