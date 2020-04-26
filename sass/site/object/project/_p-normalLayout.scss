@@ -19,6 +19,8 @@ $class:'.p-normalLayout';
     font-family: 'Anton' ;
     letter-spacing: 2px;
     font-size: 10vw;
+    padding-left: 10px;
+    padding-right: 10px;
     @include mq-md {
       font-size: 5rem;
       letter-spacing: 4px;
