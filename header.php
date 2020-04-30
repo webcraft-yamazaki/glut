@@ -24,8 +24,8 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
-<!-- 	
-	<script data-ad-client="ca-pub-4853317107094346" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+	
+	<script data-ad-client="ca-pub-4853317107094346" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
 	
 </head>
