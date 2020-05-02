@@ -20,6 +20,7 @@
 		<a class="c-outlineButton mb-4" href="<?php echo get_permalink( 18 ); ?>">CONTACT</a>
 		<div class="p-siteAuthorProfile__sns">
 			<a class="c-snsLink c-snsLink--black c-snsLink--big" href="https://twitter.com/GLUT2020"><i class="fab fa-twitter"></i></a>
+			<a class="c-snsLink c-snsLink--black c-snsLink--big" href="https://www.facebook.com/GLUT-106898417675902"><i class="fab fa-facebook-f"></i></a>
 		</div>
 	</div>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
