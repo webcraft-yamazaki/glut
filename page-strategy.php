@@ -27,7 +27,7 @@ get_header();
 <main>
 	<section class="test">
 		<h2>MAKE THE VALUE</h3>
-		<h3>「成果を出せる価値あるWEB戦略を届ける」</h3>
+		<h3>成果を出せる価値あるWEB戦略を届ける</h3>
 		<p>
 			この想いを念頭にGLUTでは2020年から制作業務をしています。
 			弊社では良い物とは3つの観点から定義をしています。
@@ -46,7 +46,7 @@ get_header();
 
 	<section class="test">
 		<img class="test__i" src="<?php echo get_template_directory_uri(); ?>/images/strategy02.jpg" alt="">
-		<h3 data-tooltip="02">「Googleに準拠したSEOに強いデベロップメント」</h3>
+		<h3 data-tooltip="02">Googleに準拠したSEOに強いデベロップメント</h3>
 		<p>
 		Googleガイドラインに沿ったサイト構築をし、SEOに強いサイトをご提供します。
 		近年ではモバイルの設計やサイトスピードの最適化をすることで、
@@ -55,7 +55,7 @@ get_header();
 	</section>
 	<section class="test">
 		<img class="test__i" src="<?php echo get_template_directory_uri(); ?>/images/strategy03.jpg" alt="">
-		<h3 data-tooltip="03">「最適なマーケティングで成果を向上させる」</h3>
+		<h3 data-tooltip="03">最適なマーケティングで成果を向上させる</h3>
 		<p>
 		どんなに良い商品でも世の中に認知され、お客様に知って頂く事が重要です。
 		マーケティングは商品や企業様に応じたマーケティングが存在します。

@@ -11,6 +11,8 @@ $class : '.c-snsLink';
   color: $color__text-main !important;
   display: inline-block;
   font-size: 0.8rem;
+  width: 26px;
+  height: 26px;
   @include mq-md {
     padding: 7px;
   }

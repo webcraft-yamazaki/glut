@@ -13,8 +13,12 @@
 
 		<footer id="colophon" class="l-footer container-fluid">
 	  	<p class="l-footer__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">GLUT</a></p>
-	  	<div class="l-footer__sns"><a class="c-snsLink" href="https://twitter.com/GLUT2020"><i class="fab fa-twitter"></i></a></div>
-	  	<p class="l-footer__copyright">GLUT.inc 2020</p>
+		  <div class="l-footer__sns">
+			  <a class="c-snsLink" href="https://twitter.com/GLUT2020" target="_blank"><i class="fab fa-twitter"></i></a>
+			  <a class="c-snsLink" href="https://www.facebook.com/GLUT-106898417675902" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		  </div>
+		  
+	  	<p class="l-footer__copyright">&copy;GLUT</p>
 		</footer>
 		<div id="slideMenuOverlay"></div>
 	</div><!-- #page -->
