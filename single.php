@@ -61,6 +61,7 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 					</div>
 
 				</article>
+				<?php get_template_part( 'template-parts/relatedPost'); ?>
 			</main>
 		</div>
 
