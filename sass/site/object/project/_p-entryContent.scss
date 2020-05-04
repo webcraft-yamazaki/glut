@@ -102,7 +102,9 @@ $class:".p-entryContent";
     background-color: $color__site-main;
     color: $color__white;
   }
-
+  a {
+    color: $color__link;
+  }
 }
 
 #rtoc-mokuji-wrapper{
