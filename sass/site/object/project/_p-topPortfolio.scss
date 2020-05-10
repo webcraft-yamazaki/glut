@@ -16,9 +16,9 @@ $class : '.p-topPortfolio';
       font-size: 0.9rem;
       color: #6f6e6e;
       margin-bottom: 20px;
-      letter-spacing: 6px;
       @include mq-md {
         width: 340px;
+        letter-spacing: 6px;
         font-size: 1rem;
         margin-left: auto;
         margin-right: 160px;

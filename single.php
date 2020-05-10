@@ -17,7 +17,7 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 
 	<div class="container-md px-md-0 mb-2">
 		<div class="row justify-content-md-center">
-			<div class="col-md-7 px-0">
+			<div class="col-md-7 pl-2">
 			<?php breadcrumb(); ?>
 		</div>
 		</div>
