@@ -25,7 +25,7 @@
   crossorigin="anonymous"></script>
 
 	
-	<script data-ad-client="ca-pub-4853317107094346" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-9578187613543560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
 	
 </head>
