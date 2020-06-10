@@ -27,17 +27,6 @@
 	
   <script data-ad-client="ca-pub-9578187613543560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
-	
-	<!-- Twitter universal website tag code -->
-	<script>
-	!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-	},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-	a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-	// Insert Twitter Pixel ID and Standard Event data below
-	twq('init','o3xwz');
-	twq('track','PageView');
-	</script>
-	<!-- End Twitter universal website tag code -->
 </head>
 
 <body <?php body_class('fo2'); ?>>
