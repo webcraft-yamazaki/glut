@@ -1,0 +1,49 @@
+
+$class : '.c-priceInfo';
+
+#{$class} {
+  @include mq-md {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block {
+    padding: 30px 20px;
+    color: #ffffff;
+    margin: 0 auto 30px;
+    background-color: #232323;
+    border-radius: 5px;
+    @include mq-md {
+      width: 340px;
+      margin: 0 20px 30px;
+      padding-bottom: 40px;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      padding-top: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    h4 {
+      @include mq-md {
+        font-size: 1.8rem!important;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      font-weight: bold;
+      font-size: 18px!important;
+      margin: 5px auto 0!important;
+      @include mq-md {
+        font-size: 1.3rem!important;
+        margin: 0!important;
+      }
+    }
+    hr {
+      margin-bottom: 30px;
+      @include mq-md {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -35,6 +35,11 @@
 @import "object/component/c-breadcrumb";
 @import "object/component/c-pager";
 @import "object/component/c-gridMenuItem";
+@import "object/component/c-makeMerit";
+@import "object/component/c-boxContent";
+@import "object/component/c-priceInfo";
+@import "object/component/c-flowImage";
+@import "object/component/c-cta";
 
 /*--- #Project ---*/
 @import "object/project/p-mainVisual";
@@ -47,6 +52,7 @@
 @import "object/project/p-articleList";
 @import "object/project/p-siteAuthorProfile";
 @import "object/project/p-entryContent";
+@import "object/project/p-singleContent";
 @import "object/project/p-contactForm";
 @import "object/project/p-normalLayout";
 @import "object/project/p-tabToggle";

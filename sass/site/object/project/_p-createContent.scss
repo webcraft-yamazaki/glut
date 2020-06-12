@@ -1,5 +1,5 @@
 .p-createContent {
-  padding: 0 10px;
+  padding: 0;
   h2 {
     margin: 0;
     text-align: center;
@@ -7,6 +7,42 @@
       font-size: 3rem;
     }
   }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    padding-left: 16px;
+    // padding-bottom: 4px;
+    @include mq-md {
+      font-size: 2rem;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  ol {
+    border-top: 2px solid $color__background-hr;
+    border-bottom: 2px solid $color__background-hr;
+    padding: 40px;
+    box-sizing: content-box;
+    padding-left: 40px;
+  }
+  .wp-block-code {
+    background-color: $color__site-main;
+    color: $color__white;
+  }
+  a {
+    color: $color__link;
+  }
+
+  #rtoc-mokuji-wrapper {
+    background-color: white;
+    border: 1px solid $color__border-abbr;
+    margin-top: 80px !important;
+  }
+
   p {
     font-size: 13px;
     text-align: center;
@@ -16,11 +52,59 @@
       margin: 1rem 0;
     }
   }
+  &__img {
+    text-align: center;
+    margin-bottom: 30px;
+    img {
+      max-width: 1000px;
+      width: 100%;
+      display: inline-block;
+    }
+    @include mq-md {
+      margin-bottom: 150px;
+    }
+  }
+  // p{
+  //   font-size: 1rem;
+  //   margin-bottom: 1.8rem;
+  //   @include mq-md{
+  //     font-size: 1.1rem;
+  //   }
+  // }
   &__button {
     @include mq-md {
       width: 50%;
       margin-left: auto;
       padding-right: 124px;
+    }
+  }
+  &__makeMerit {
+    margin: 60px auto 30px;
+    @include mq-md {
+      margin: 100px auto 80px;
+    }
+  }
+  &__flowImage {
+    margin: 80px auto 30px;
+  }
+  &__boxContent {
+    margin-bottom: 60px;
+    @include mq-md {
+      width: 710px;
+      margin: 0 auto 80px;
+    }
+  }
+  &__priceInfo {
+    @include mq-md {
+      margin-top: 70px;
+    }
+  }
+  &__cta {
+    padding: 60px 0 80px;
+    @include mq-md {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 60px 0 120px;
     }
   }
 }

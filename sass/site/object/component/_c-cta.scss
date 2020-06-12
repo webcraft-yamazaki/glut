@@ -1,0 +1,55 @@
+$class : '.c-cta';
+
+#{$class} {
+  h2 {
+    line-height: 1.4;
+    margin-bottom: 30px!important;
+    @include mq-md {
+      line-height: 1.2;
+      margin-bottom: 40px!important;
+    }
+    span {
+      font-family: 'Anton';
+      font-size: 0.9em;
+      @include mq-md {
+        font-size: 0.7em;
+        font-weight: normal;
+      }
+    }
+  }
+  &__box {
+    border: 1px solid $color__site-main;
+    color: $color__site-main;
+    text-align: center;
+    position: relative;
+
+    a {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: $color__site-main!important;
+      display: inline-block;
+      transition: 0.3s all;
+      &:hover {
+        background-color:$color__site-main!important;
+        color: #ffffff!important;
+      }
+      @include mq-md {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 1.3rem;
+      }
+
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0a9";
+        font-weight: bold;
+        position: absolute;
+        right:10px;
+        @include mq-md {
+          right:20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+
+$class : '.c-makeMerit';
+
+#{$class} {
+  position: relative;
+  @include mq-md {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &::after {
+    @include clearfix;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &::after {
+      @include clearfix;
+    }
+
+    @include mq-md {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    clear: both;
+    width: 160px;
+    img {
+      height: 32px;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    p {
+      font-weight: bold;
+      font-size: 12px!important;
+    }
+
+    &:nth-of-type(odd) {float: left;}
+    &:nth-of-type(even) {float: right;}
+  }
+
+  &__point {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: absolute;
+    top:0;
+    left: -100%;
+    right: -100%;
+    margin: 0 auto;
+    z-index: 100;
+    @include mq-md {
+      left: auto;
+      right: auto;
+    }
+
+    &:nth-of-type(1) {top:20px}
+    &:nth-of-type(2) {top:90px}
+    &:nth-of-type(3) {top:170px}
+    &:nth-of-type(4) {top:250px}
+    &:nth-of-type(5) {top:330px}
+    @include mq-md {
+      &:nth-of-type(1) {top:96px;left:72px}
+      &:nth-of-type(2) {top:96px;left:236px}
+      &:nth-of-type(3) {top:96px;left:394px}
+      &:nth-of-type(4) {top:96px;left:554px}
+      &:nth-of-type(5) {top:96px;left:714px}
+    }
+  }
+
+  &__line {
+    width: 3px;
+    height: 310px;
+    background-color: #efefef;
+    top:30px;
+    left: -100%;
+    right: -100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 0;
+    @include mq-md {
+      width: 656px;
+      height: 3px;
+      top:100px;
+    }
+  }
+}
