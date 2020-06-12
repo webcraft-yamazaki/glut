@@ -23,7 +23,9 @@ $class:'.l-footer ';
     }
   }
   &__sns {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__copyright {
     font-size: 0.8rem;

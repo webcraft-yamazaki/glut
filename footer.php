@@ -16,6 +16,8 @@
 		  <div class="l-footer__sns">
 			  <a class="c-snsLink" href="https://twitter.com/GLUT2020" target="_blank"><i class="fab fa-twitter"></i></a>
 			  <a class="c-snsLink" href="https://www.facebook.com/GLUT-106898417675902" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			  <a class="c-snsLink" href="https://www.youtube.com/channel/UCzeAwdOT68iE9F2egq5HKkA" target="_blank"><i class="fab fa-youtube"></i></a>
+			  <a class="c-snsLink" href="https://www.instagram.com/glut_2020" target="_blank"><i class="fab fa-instagram-square"></i></a>
 		  </div>
 		  
 	  	<p class="l-footer__copyright">&copy;GLUT</p>

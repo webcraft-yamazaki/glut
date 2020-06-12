@@ -3,16 +3,18 @@ $class : '.c-snsLink';
 
 #{$class} {
   background-color: #fff;
-  display: block;
-  margin: 0 auto;
-  padding: 4px;
   line-height: 1;
   border-radius: 100%;
   color: $color__text-main !important;
-  display: inline-block;
   font-size: 0.8rem;
-  width: 26px;
-  height: 26px;
+  padding: 8px 8px 8px 8px;
+  margin: 0 4px;
+  width: 30px;
+  height: 30px;
+  i{
+    position: relative;
+    top: 2px;
+  }
   @include mq-md {
     padding: 7px;
   }
@@ -22,10 +24,4 @@ $class : '.c-snsLink';
     background-color: $color__site-main;
     }
 
-  &--big {
-      padding: 8px;
-      font-size: 1rem;
-      width: 30px;
-      height: 30px;
-  }
 }
