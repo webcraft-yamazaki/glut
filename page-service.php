@@ -26,7 +26,7 @@ get_header();
 	<div class="p-tabToggle container-fluid px-0">
 		<ul class="container-md">
 			<li id="tabImg" class="p-tabToggle__item"><i class="far fa-images"></i><span>画像制作</span></li>
-			<li id="tabWeb" class="p-tabToggle__item active"><i class="fas fa-desktop"></i><span>WEB制作</span></li>
+			<li id="tabWeb" class="p-tabToggle__item active"><i class="fas fa-desktop"></i><span>Web制作</span></li>
 			<!-- <li id="tabLP" class="p-tabToggle__item"><i class="far fa-sticky-note"></i><span>LP制作</span></li> -->
 		</ul>
 		<span class="current"></span>
@@ -51,16 +51,16 @@ get_header();
 							</div>
 							<div id="tabWeb_content" class="p-createContent">
 								<h2>
-									WEBサイトで課題を解決
+									Webサイトで課題を解決
 								</h2>
-								<p>昨今WEBサイトやスマートフォンサイトを活用した戦略的デジタルマーケティングの需要が高まっています。</p>
-								<p>弊社では課題解決に繋がるデザインをコンセプトにWEBサイトの制作をしています。</p>
+								<p>昨今Webサイトやスマートフォンサイトを活用した戦略的デジタルマーケティングの需要が高まっています。</p>
+								<p>弊社では課題解決に繋がるデザインをコンセプトにWebサイトの制作をしています。</p>
 								<br>
 								<br class="d-none d-md-block">
-								<div class="p-createContent__img"><img src="<?php echo get_template_directory_uri(); ?>/images/web-image.jpg" alt="バナー制作""></div>
-						<h3 class=" align-center">GLUTのWEB制作の強み</h3>
-									<p>最新のトレンドをおさえつつ、ユーザーファーストの情報設計を心がけて<br>WEBサイトの制作をしています。</p>
-									<p>カメラマンやWEBマーケティングのプロフェッショナルと協業しているため、<br>写真からマーケティングまでをプロフェッショナルに依頼することでクオリティの高い<br>WEBサイトを提供します。</p>
+								<div class="p-createContent__img"><img src="<?php echo get_template_directory_uri(); ?>/images/Web-image.jpg" alt="バナー制作""></div>
+						<h3 class=" align-center">GLUTのWeb制作の強み</h3>
+									<p>最新のトレンドをおさえつつ、ユーザーファーストの情報設計を心がけて<br>Webサイトの制作をしています。</p>
+									<p>カメラマンやWebマーケティングのプロフェッショナルと協業しているため、<br>写真からマーケティングまでをプロフェッショナルに依頼することでクオリティの高い<br>Webサイトを提供します。</p>
 									<div class="p-createContent__makeMerit">
 										<div class="c-makeMerit">
 											<ul class="c-makeMerit__list">
@@ -119,7 +119,7 @@ get_header();
 										</div>
 										<p>
 											※要望に合わせたシステム追加で別途料金が発生する可能性があります。<br>
-											詳しい見積もりはContanctよりお問い合わせ下さい。
+											詳しい見積もりはContactよりお問い合わせ下さい。
 										</p>
 									</div>
 									<div style="background-color:#f8f8f8;margin:0 -15px;" class="pb-4 pb-md-5 px-3 mx-md-0">
@@ -166,17 +166,7 @@ get_header();
 										</div>
 										<hr style="max-width:1200px">
 									</div>
-									<div class="p-createContent__cta">
-										<div class="c-cta">
-											<h2 class="align-center">お問い合わせ<br><span>CONTACT</span></h3>
-											<div class="c-cta__box">
-												<a href="<?php echo get_permalink(18); ?>">
-													成果の上がる制作の相談をする
-												</a>
-											</div>
-
-										</div>
-									</div>
+									<?php get_template_part( 'template-parts/mainCta'); ?>
 									<!-- <div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div> -->
 								</div>
 								<!-- <div id="tabLP_content" class="p-createContent">

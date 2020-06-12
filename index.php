@@ -20,7 +20,7 @@ get_header();
 <main id="main" class="site-main">
   <div class="p-mainVisual">
     <p class="p-mainVisual__mainText"><span class="hidetext">JUST MAKE <br class="d-block d-md-none"> THE VALUE</span></p>
-    <p class="p-mainVisual__subText"><span class="hidetext">ニーズを100%超える価値を創り提供する<br class="d-block d-md-none">WEBクリエイターチーム</span></p>
+    <p class="p-mainVisual__subText"><span class="hidetext">ニーズを100%超える価値を創り提供する<br class="d-block d-md-none">Webクリエイターチーム</span></p>
     <p class="p-mainVisual__logo"><span class="hidetext">-GLUT-<br><span>グラット</span></span></p>
   </div>
   <div class="container-fluid">
@@ -40,7 +40,7 @@ get_header();
         <a class="c-thumbnailMenu c-thumbnailMenu--design" href="<?php echo get_permalink( 206 ); ?>">
           <div class="c-thumbnailMenu__bgc">
             <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">STRATEGY</p>
-            <p class="c-thumbnailMenu__title">グラットのWEB戦略</p>
+            <p class="c-thumbnailMenu__title">グラットのWeb戦略</p>
             <span class="c-thumbnailMenu__button">
               VIEW
             </span>

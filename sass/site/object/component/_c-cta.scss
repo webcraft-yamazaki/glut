@@ -4,6 +4,7 @@ $class : '.c-cta';
   h2 {
     line-height: 1.4;
     margin-bottom: 30px!important;
+    font-size: 3rem;
     @include mq-md {
       line-height: 1.2;
       margin-bottom: 40px!important;

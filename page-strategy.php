@@ -15,7 +15,7 @@ get_header();
 	<div class="container-md px-0">
 		<h2 class="p-normalLayout__title">
 			<?php the_title(); ?>
-			<span>GLUTのWEB戦略</span>
+			<span>GLUTのWeb戦略</span>
 		</h2>
 		<div class="p-normalLayout__breadcrumb">
 			<?php breadcrumb(); ?>
@@ -27,7 +27,7 @@ get_header();
 <main>
 	<section class="test">
 		<h2>MAKE THE VALUE</h3>
-		<h3>成果を出せる価値あるWEB戦略を届ける</h3>
+		<h3>成果を出せる価値あるWeb戦略を届ける</h3>
 		<p>
 			この想いを念頭にGLUTでは2020年から制作業務をしています。
 			弊社では良い物とは3つの観点から定義をしています。
@@ -36,7 +36,7 @@ get_header();
 	
 	<section class="test">
 		<img class="test__i" src="<?php echo get_template_directory_uri(); ?>/images/strategy01.jpg" alt="">
-		<h3 data-tooltip="01">「 成果に繋がる情報設計と洗練されたUI/UX」</h3>
+		<h3 data-tooltip="01">成果に繋がる情報設計と洗練されたUI/UX</h3>
 		<p>
 			良いユーザーインターフェースを作成する為にお客様が抱えている課題や
 			ユーザーが抱えている問題を抽出し、課題を解決するためにリサーチを行い、
@@ -70,6 +70,9 @@ get_header();
 	</section>
 	
 </main>
+
+
+<?php get_template_part( 'template-parts/mainCta'); ?>
 
  <?php
  get_footer();
