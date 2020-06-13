@@ -13,7 +13,7 @@ get_header();
 	<div class="p-normalLayout container-fluid px-0 mb-0">
 		<div class="container-md px-0">
 			<h2 class="p-normalLayout__title">
-				<?php the_title(); ?>
+				SERVICE
 				<?php if (get_field('page_subtitle')) { ?>
 					<span><?php the_field('page_subtitle'); ?></span>
 				<?php } ?>
@@ -57,7 +57,7 @@ get_header();
 								<p>弊社では課題解決に繋がるデザインをコンセプトにWebサイトの制作をしています。</p>
 								<br>
 								<br class="d-none d-md-block">
-								<div class="p-createContent__img"><img src="<?php echo get_template_directory_uri(); ?>/images/Web-image.jpg" alt="バナー制作""></div>
+								<div class="p-createContent__img"><img src="<?php echo get_template_directory_uri(); ?>/images/web-image.jpg" alt="バナー制作""></div>
 						<h3 class=" align-center">GLUTのWeb制作の強み</h3>
 									<p>最新のトレンドをおさえつつ、ユーザーファーストの情報設計を心がけて<br>Webサイトの制作をしています。</p>
 									<p>カメラマンやWebマーケティングのプロフェッショナルと協業しているため、<br>写真からマーケティングまでをプロフェッショナルに依頼することでクオリティの高い<br>Webサイトを提供します。</p>

@@ -29,7 +29,7 @@ get_header();
         <a class="c-thumbnailMenu c-thumbnailMenu--service" href="<?php echo get_permalink( 233 ); ?>">
           <div class="c-thumbnailMenu__bgc">
             <p class="c-thumbnailMenu__title c-thumbnailMenu__title--english">OUR SERVICE</p>
-            <p class="c-thumbnailMenu__title">一緒に考え抜く、ウェブ制作</p>
+            <p class="c-thumbnailMenu__title">一緒に考え抜く、Web制作</p>
             <span class="c-thumbnailMenu__button">
               VIEW
             </span>

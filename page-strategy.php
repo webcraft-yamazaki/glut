@@ -14,7 +14,7 @@ get_header();
 <div class="p-normalLayout container-fluid">
 	<div class="container-md px-0">
 		<h2 class="p-normalLayout__title">
-			<?php the_title(); ?>
+			STRATEGY
 			<span>GLUTのWeb戦略</span>
 		</h2>
 		<div class="p-normalLayout__breadcrumb">
