@@ -24,7 +24,7 @@ get_header();
 </div>
 
 
-<main>
+<main class="pb-5">
 	<section class="test">
 		<h2>MAKE THE VALUE</h3>
 		<h3>成果を出せる価値あるWeb戦略を届ける</h3>
@@ -68,11 +68,12 @@ get_header();
 			</a> -->
 		</div>
 	</section>
-	
+
+	<div class="mb-5 px-3" style="max-width:800px;margin:auto;">
+		<?php get_template_part( 'template-parts/mainCta'); ?>
+	</div>
+
 </main>
-
-
-<?php get_template_part( 'template-parts/mainCta'); ?>
 
  <?php
  get_footer();

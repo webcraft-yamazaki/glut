@@ -166,7 +166,9 @@ get_header();
 										</div>
 										<hr style="max-width:1200px">
 									</div>
-									<?php get_template_part( 'template-parts/mainCta'); ?>
+									<div class="p-createContent__cta">
+										<?php get_template_part( 'template-parts/mainCta'); ?>
+									</div>
 									<!-- <div class="p-createContent__button align-center"><a class="c-button" href="#">WEB制作の詳細を見る<i class="far fa-arrow-alt-circle-right"></i></a></div> -->
 								</div>
 								<!-- <div id="tabLP_content" class="p-createContent">
