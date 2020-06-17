@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -8,53 +9,106 @@
  */
 
 get_header();
+$args = array(
+	'post_type' => 'post',
+	'paged' => $paged,
+	'posts_per_page' => get_option('posts_per_page'), //表示する件数
+);
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'glut' ); ?></h1>
-				</header><!-- .page-header -->
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'glut' ); ?></p>
+<div id="content" class="site-content pt-0">
+	<div class="p-normalLayout container-fluid">
+		<div class="container-md px-0">
+			<h2 class="p-normalLayout__title">
+				404 not found
+			</h2>
+			<div class="p-normalLayout__breadcrumb">
+				<?php breadcrumb(); ?>
+			</div>
+		</div>
+	</div>
 
-					<?php
-					get_search_form();
+	<div class="p-sectionTitle mb-2 mb-md-5">
+	<div class="container px-0">
+		<div class="row m-0 align-items-center justify-content-md-between">
+			<div class="col-4">
+				<p class="p-sectionTitle__text">その他の記事一覧</p>
+			</div>
+			<div class="col-8 col-md-5">
+				<div class="p-sectionTitle__input">
+					<form  role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" method="get"><input type="text" name="s" id="s" placeholder="キーワード検索"><button type="submit"><i class="fas fa-search"></i></form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'glut' ); ?></h2>
+	<div class="container-md px-md-0 mb-2">
+		<div class="row justify-content-md-center">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main px-0">
+					<div class="p-articleList">
 						<ul>
 							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
+
+							$wp_query = new WP_Query($args);
+							// ループ
+							if ($wp_query->have_posts()) {
+								while ($wp_query->have_posts()) {
+									$wp_query->the_post();
+
+									$category = get_the_category();
+
+									$author = get_userdata($post->post_author);
+									$user_id      = $author->ID;
+									$avatar_img  = scrapeImage(get_wp_user_avatar($user_id));
+
+
+									// 処理を記述
+							?>
+									<li class="p-articleList__item">
+										<div class="c-listWithThumbnail">
+											<div class="c-listWithThumbnail__sub">
+												<a href="<?php the_permalink($post); ?>"><img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt=""></a>
+											</div>
+											<div class="c-listWithThumbnail__main">
+												<span class="c-listWithThumbnail__date">
+													<?php the_date('Y.m.d'); ?>
+												</span>
+												<h3 class="c-listWithThumbnail__title">
+													<a href="<?php the_permalink($post); ?>"><?php the_title(); ?></a>
+												</h3>
+												<a class="c-listWithThumbnail__category" href="<?php echo get_category_link($category[0]->term_id); ?>">
+													<?php echo $category[0]->cat_name; ?>
+												</a>
+												<span class="c-listWithThumbnail__author" style="background-image: url(<?php echo $avatar_img; ?>);"></span>
+											</div>
+										</div>
+									</li>
+							<?php
+								}
+							}
+
 							?>
 						</ul>
-					</div><!-- .widget -->
 
-					<?php
-					/* translators: %1$s: smiley */
-					$glut_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'glut' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$glut_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+						<?php
+						if (function_exists("pagination")) {
+							pagination($my_query->max_num_pages);
+						};
+						?>
+						<?php
+						// 投稿データのリセット
+						wp_reset_query();
+						?>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php
 get_footer();
