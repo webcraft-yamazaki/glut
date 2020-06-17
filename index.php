@@ -88,8 +88,8 @@ get_header();
 		$args = array(
 				'post_type' => 'post',
 				'posts_per_page' => 6,
-		 );
-		 $category = get_the_category();
+		);
+		$category = get_the_category();
 		$wp_query = new WP_Query($args);
 		// ループ
 		if ( $wp_query->have_posts() ) {
@@ -108,7 +108,7 @@ get_header();
   </div>
   </div>
   <div class="row justify-content-center m-0">
-     <a class="c-button col-6 col-md-4" href="<?php echo get_permalink( 7 ); ?>">VIEW ALL</a>
+    <a class="c-button col-6 col-md-4" href="<?php echo get_permalink( 7 ); ?>">VIEW ALL</a>
   </div>
 </aside>
 
