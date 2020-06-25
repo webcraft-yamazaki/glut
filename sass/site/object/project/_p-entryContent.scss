@@ -104,6 +104,8 @@ $class:".p-entryContent";
   }
   h4{
     font-size: 1.3rem;
+    border-left: solid 5px $color__site-main;
+    padding-left: 10px;
   }
   p{
     font-size: 1rem;
