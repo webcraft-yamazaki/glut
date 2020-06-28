@@ -38,9 +38,9 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 							公開日:<?php the_time('Y/m/d');?> 　/　 最終更新日:<?php the_modified_date('Y/m/d') ?>
 						</time>
 					</div>
-					<h2 class="p-entryContent__title">
+					<h1 class="p-entryContent__title">
 						<?php the_title(); ?>
-					</h2>
+					</h1>
 					<div class="p-entryContent__category">
 						<span><?php echo get_the_category()[0]->cat_name; ?></span> 
 					</div>
@@ -59,9 +59,9 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 				<?php endif; ?>
 
 					<div class="p-socialButton">
-						<h3>この記事を共有する</h3>
-						<a class="btn btn-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&amp;t=<?php echo urlencode(the_title("","",0)); ?>"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-						<a class="btn btn-icon btn-twitter" href="http://twitter.com/intent/tweet?text=<?php echo urlencode(the_title("","",0)); ?>&amp;<?php echo urlencode(get_permalink()); ?>&amp;url=<?php echo urlencode(get_permalink()); ?>"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+						<h2>この記事を共有する</h3>
+						<a class="btn btn-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&amp;t=<?php echo urlencode(the_title("","",0)); ?>"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+						<a class="btn btn-icon btn-twitter" href="http://twitter.com/intent/tweet?text=<?php echo urlencode(the_title("","",0)); ?>&amp;<?php echo urlencode(get_permalink()); ?>&amp;url=<?php echo urlencode(get_permalink()); ?>"><i class="fab fa-twitter"></i><span>Twitter</span></a>
 						<a class="btn btn-icon btn-line" href="http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>"><i class="fab fa-line"></i><span>Line</span></a>
 					</div>
 

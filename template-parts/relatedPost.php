@@ -80,7 +80,7 @@
     // 1件以上あれば
     if( count($rel_posts) > 0 ): ?>
     
-    <h3>関連記事</h3>
+    <h2>関連記事</h2>
         <ul class="p-relatePost">
             <?php
             foreach ($rel_posts as $post) : setup_postdata($post);

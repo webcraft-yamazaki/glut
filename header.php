@@ -21,7 +21,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="preload" as="style">
-	
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script data-ad-client="ca-pub-9578187613543560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
@@ -41,7 +40,11 @@
 			<header id="masthead" class="l-header container-fluid py-2">
 				<div class="row justify-content-start justify-content-md-end align-items-center">
 					<div class="c-logo ml-3 mx-md-4">
-						<h1 class="align-center"><a href="<?php echo esc_url(home_url('/')); ?>">GLUT</a></h1>
+					<?php if(is_single()){ ?>
+						<div class="c-logo__title align-center"><a href="<?php echo esc_url(home_url('/')); ?>">GLUT</a></div>
+					<?php } else { ?>
+						<h1 class="c-logo__title align-center"><a href="<?php echo esc_url(home_url('/')); ?>">GLUT</a></h1>
+					<?php }; ?>
 					</div>
 					<div class="sp-none mx-md-4">
 						<a class="c-contactLink" href="<?php echo get_permalink(18); ?>">
