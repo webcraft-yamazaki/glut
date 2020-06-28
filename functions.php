@@ -204,3 +204,35 @@ return $columns;
 }
 add_filter( 'manage_edit-post_sortable_columns', 'sort_posts_columns_postid' );
 add_filter( 'manage_edit-page_sortable_columns', 'sort_posts_columns_postid' );
+
+// wp emojiを無効化
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+// wp embed系を削除
+remove_action('wp_head','rest_output_link_wp_head');
+remove_action('wp_head','wp_oembed_add_discovery_links');
+remove_action('wp_head','wp_oembed_add_host_js');
+
+// 不必要な読込を非表示
+// generator
+remove_action( 'wp_head', 'wp_generator');
+// rel="shortlink"
+remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+// WLW(Windows Live Writer) wlwmanifest.xml
+remove_action( 'wp_head', 'wlwmanifest_link');
+// RSD xmlrpc.php?rsd
+remove_action( 'wp_head', 'rsd_link');
+
+//jsにasync属性を付与
+if (!(is_admin() )) {
+  function add_async_to_enqueue_script( $url ) {
+  if ( FALSE === strpos( $url, '.js' ) ) return $url;
+  // if ( strpos( $url, 'jquery.js' ) ) return $url;       //対象外
+  // if ( strpos( $url, 'jquery.min.js' ) ) return $url;
+  // if ( strpos( $url, 'jquery-colorbox-wrapper-min.js' ) ) return $url;
+  // if ( strpos( $url, 'jquery.flexslider.min.js' ) ) return $url;
+  return "$url' async charset='UTF-8";        // async属性を付与
+}
+add_filter( 'clean_url', 'add_async_to_enqueue_script', 11, 1 );
+}
