@@ -57,5 +57,5 @@ twq('track','PageView');
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-
+<link href="<?php echo get_template_directory_uri(); ?>/css/font-icon.css" rel="stylesheet">
 </html>
