@@ -34,8 +34,8 @@ gulp.task('browser-reload', function (done){
 gulp.task("sass", function(done) {
 	gulp.src("./sass/**/*.scss")
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(csscomb())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        // .pipe(csscomb())
         .pipe(sourcemaps.write({includeContent: false}))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(autoprefixer({
