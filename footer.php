@@ -12,15 +12,15 @@
 ?>
 
 		<footer id="colophon" class="l-footer container-fluid">
-	  	<p class="l-footer__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">GLUT</a></p>
-		  <div class="l-footer__sns">
-			  <a class="c-snsLink" href="https://twitter.com/GLUT2020" target="_blank"><i class="fab fa-twitter"></i></a>
-			  <a class="c-snsLink" href="https://www.facebook.com/GLUT-106898417675902" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			  <a class="c-snsLink" href="https://www.youtube.com/channel/UCzeAwdOT68iE9F2egq5HKkA" target="_blank"><i class="fab fa-youtube"></i></a>
-			  <a class="c-snsLink" href="https://www.instagram.com/glut_2020" target="_blank"><i class="fab fa-instagram-square"></i></a>
-		  </div>
-		  
-	  	<p class="l-footer__copyright">&copy;GLUT</p>
+			<p class="l-footer__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">GLUT</a></p>
+			<div class="l-footer__sns">
+				<a class="c-snsLink" href="https://twitter.com/GLUT2020" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a class="c-snsLink" href="https://www.facebook.com/GLUT-106898417675902" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a class="c-snsLink" href="https://www.youtube.com/channel/UCzeAwdOT68iE9F2egq5HKkA" target="_blank"><i class="fab fa-youtube"></i></a>
+				<a class="c-snsLink" href="https://www.instagram.com/glut_2020" target="_blank"><i class="fab fa-instagram-square"></i></a>
+			</div>
+
+			<p class="l-footer__copyright">&copy;GLUT</p>
 		</footer>
 		<div id="slideMenuOverlay"></div>
 	</div><!-- #page -->
@@ -57,6 +57,5 @@ twq('track','PageView');
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-<script src="https://kit.fontawesome.com/f826fffb9d.js" crossorigin="anonymous" async></script>
 
 </html>
