@@ -8,13 +8,35 @@
  */
 
  get_header();
- $categories = get_the_category();
+
  $args = array(
  		'post_type' => 'post',
 		'paged' => $paged,
-		'cat' => $categories[0]->term_id,
  		'posts_per_page' => get_option('posts_per_page'), //表示する件数
-  );
+	);
+	
+		
+	if(is_category()):
+		$categories = get_the_category();
+		$args += array('cat' => $categories[0]->term_id);
+    // $archive_title = single_cat_title('', false).'の記事';
+    // $archive_description = category_description();
+	elseif(is_tag()):
+		$tag_id = get_query_var('tag_id');
+		$args += array('tag_id' => $tag_id);
+    // $archive_title = single_cat_title('', false).'の記事';
+    // $archive_description = tag_description();
+  elseif(is_year()):
+    // $archive_title = get_the_time("Y年").'の記事';
+  elseif(is_month()):
+    // $archive_title = get_the_time("Y年m月").'の記事';
+  elseif(is_day()):
+    // $archive_title = get_the_time("Y年m月d日").'の記事';
+  elseif(is_author()):
+    // $author_id = get_query_var('author');
+    // $author_name = get_the_author_meta( 'display_name', $author_id );
+    // $archive_title = $author_name.'が投稿した記事一覧';
+  endif;
 
  ?>
  <div id="content" class="site-content" style="background-color:#fff;">
@@ -55,13 +77,14 @@
  	<main id="main" class="site-main">
  		<div class="p-articleList">
  			<ul>
- 				<?php
+				<?php
+				
+        $wp_query = new WP_Query($args);
 
-         $wp_query = new WP_Query($args);
- 				// ループ
+				// ループ
  				if ( $wp_query->have_posts() ) {
  				    while ( $wp_query->have_posts() ) {
- 				        $wp_query->the_post();
+								$wp_query->the_post();
 
  								$category = get_the_category();
 

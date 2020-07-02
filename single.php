@@ -55,6 +55,7 @@ $avatar_img  = scrapeImage( get_wp_user_avatar( $user_id ) );
 						the_content();
 						?>
 					</div><!-- .entry-content -->
+					<?php the_tags( '<div class="p-entryTags"><span class="p-entryTags__item">#', '</span><span class="p-entryTags__item">', '</span></div>' ); ?>
 					<?php endwhile;?>
 				<?php endif; ?>
 

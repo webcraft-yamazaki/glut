@@ -1,0 +1,16 @@
+
+$class : '.p-entryTags';
+
+#{$class} {
+  margin-top: 30px;
+  margin-bottom: 80px;
+
+  &__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    a {
+      color: $color__text-main;
+    }
+  }
+}

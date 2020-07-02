@@ -5,21 +5,21 @@
     // 現在の記事にタグが設定されている場合
     if ( has_tag() ) {
     // タグ関連の投稿を取得
-    // $tags = wp_get_post_tags($post->ID);
-    // $tag_ids = array();
-    // foreach($tags as $tag):
-    //     array_push( $tag_ids, $tag -> term_id);
-    // endforeach ;
-    // $tag_args = array(
-    //     'post__not_in' => array($post -> ID),
-    //     'posts_per_page'=> $max_post_num,
-    //     'tag__in' => $tag_ids,
-    //     'orderby' => 'rand',
-    //     'post_type' => 'post',
-    // );
-    // $rel_posts = get_posts($tag_args);
+    $tags = wp_get_post_tags($post->ID);
+    $tag_ids = array();
+    foreach($tags as $tag):
+        array_push( $tag_ids, $tag -> term_id);
+    endforeach ;
+    $tag_args = array(
+        'post__not_in' => array($post -> ID),
+        'posts_per_page'=> $max_post_num,
+        'tag__in' => $tag_ids,
+        'orderby' => 'rand',
+        'post_type' => 'post',
+    );
+    $rel_posts = get_posts($tag_args);
     // 総件数よりタグ関連の投稿が少ない場合は、カテゴリ関連の投稿からも取得する
-    // $rel_count = count($rel_posts);
+    $rel_count = count($rel_posts);
     if ($max_post_num > $rel_count) {
         $categories = get_the_category($post->ID);
         $category_ID = array();
@@ -65,7 +65,8 @@
         // 取得件数は必要な数のみリクエスト
         $cat_args = array(
             'post__not_in' => array($post -> ID),
-            'posts_per_page'=> ($max_post_num - $rel_count),
+            'posts_per_page'=> $max_post_num,
+            // 'posts_per_page'=> ($max_post_num - $rel_count),
             'category__in' => $category_ID,
             'orderby' => 'rand',
             'post_type' => 'post',
