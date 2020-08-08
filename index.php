@@ -49,7 +49,9 @@ get_header();
       </div>
     </div>
   </div>
-  <div class="p-topPortfolio container-fluid">
+  <br>
+  <br>
+  <!-- <div class="p-topPortfolio container-fluid">
     <div class="row">
       <div class="col-md-6 p-topPortfolio__content">
         <h3 class="p-topPortfolio__title">
@@ -64,13 +66,13 @@ get_header();
       <div class="col-md-6 p-0 p-topPortfolio__img">
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/portfolio.jpg" alt="plage ネイルサロン">
         <div class="p-topPortfolio__button">
-          <!-- <a class="c-button" href="#">
+          <a class="c-button" href="#">
             VIEW WORKS
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </main>
 </div>
 

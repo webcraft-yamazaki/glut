@@ -236,3 +236,14 @@ if (!(is_admin() )) {
 }
 add_filter( 'clean_url', 'add_async_to_enqueue_script', 11, 1 );
 }
+
+/*【管理画面】ACF Options Page の設定 */
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page(array(
+    'page_title' => '共通テーマ設定', // ページタイトル
+    'menu_title' => '共通テーマ設定', // メニュータイトル
+    'menu_slug' => 'theme-general-settings', // メニュースラッグ
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
+}
