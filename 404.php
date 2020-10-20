@@ -8,6 +8,11 @@
  * @package Glut
  */
 
+// ステータスコードを出力
+http_response_code( 200 );
+// 転送処理
+// header( "refresh:5;url=" . esc_url( home_url( '/' ) ) );
+
 get_header();
 $args = array(
 	'post_type' => 'post',
