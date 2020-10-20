@@ -34,6 +34,14 @@ $args = array(
 			</div>
 		</div>
 	</div>
+	<div class="container-md align-center pt-3 pt-md-0 pb-md-4">
+	<p>お探しのページは<br>以下の理由などで見つかりませんでした。</p>
+	<p>
+	・すでに削除されている<br>
+	・公開期間が終わっている<br>
+	・アクセスしたアドレスが異なっている
+	</p>
+	</div>
 　
 	<div class="p-sectionTitle mb-2 mb-md-5">
 	<div class="container px-0">
