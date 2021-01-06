@@ -10,7 +10,7 @@
   "license": "ISC",
   "private": true,
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.7",
     "es6-promise": "^4.2.8",
     "gulp": "^4.0.2",
