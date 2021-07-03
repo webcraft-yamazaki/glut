@@ -67,6 +67,13 @@
     }
 }
 
+//Media Queries
+@mixin mq-xxl($val: $xxl-width) {
+  @media only screen and (min-width: #{$val}) {
+      @content;
+  }
+}
+
 //特定の親セレクタの状態を変更するmixin
 //参照 https://hirakublog.com/code/342/
 //指定したclassがネスト内にあるかチェック
